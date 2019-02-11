@@ -24,6 +24,7 @@ Some Ideas:
 #### The starter project includes jQuery and BootStrap, but you can enhance the game using any technology that you wish
 
 ### I IMPLEMENTED THE FOLLOWING NEW FEATURE(S):
+Betty Ware changed the background of the game to ocean and the images to seahorses.
 
 
 

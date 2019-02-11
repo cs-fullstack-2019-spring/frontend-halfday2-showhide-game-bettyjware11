@@ -50,7 +50,8 @@ function setUpTargetsAndPlay(numberOfTargets, displayTimeMs) {
     targets = numberOfTargets;
     hits = 0;
     // Clear any target images from prior game (FIXME: Sometimes doesn't remove them all :-(
-    $(".targetImg").remove();
+    //Betty Ware added "*" to select all target images
+    $("*.targetImg").remove();
     // Setup click detection for the entire table
     $("table").on("click", function () {
         clicks += 1;
@@ -74,10 +75,15 @@ function setUpTargetsAndPlay(numberOfTargets, displayTimeMs) {
         let imgID = "img" + targetNum;
 
         // Set an IMG for each randomly selected cell along with 'click' event handler
-        $('#' + tdID).append("<img id = " + imgID + " class= 'targetImg' src='bird.png'>");
+        //Betty Ware: changed target image to seahorses instead of birds...
+        $('#' + tdID).append("<img id = " + imgID + " class= 'targetImg' src='7ed36e59c24a1429c0c9b13c9034a205.png'>");
         $('#' + imgID).delay(2000).show(0); // Wait 2 seconds then show the targets
         $('#' + imgID).delay(displayTimeMs).hide(0); // Setup a callback that will hide the images after the specified time
         $('#' + tdID).on("click", clickedTarget);
     }
 
 }
+//Betty Ware set up function for splash screen...
+onload = setTimeout(function () {
+    document.getElementById("splashscreen").display = "block"; 2000;
+});
