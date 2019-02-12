@@ -1,3 +1,6 @@
+###POINTS: 2
+###KEY: I liked the water theme. Remember, you can resize the width and ht of images and speify 'no-repeat' for a more consistent result.
+
 # JavaScript Show/Hide Game
 
 Take this simple show/hide game and make it your own.
